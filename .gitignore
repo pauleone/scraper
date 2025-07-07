@@ -1,1 +1,26 @@
-caster-scraper*.json
+# Ignore credential files
+*.json
+
+# Ignore Python virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Ignore Playwright browser downloads
+playwright/
+.playwright/
+ms-playwright/
+
+# Ignore common Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Ignore editor settings
+.vscode/
+.idea/
