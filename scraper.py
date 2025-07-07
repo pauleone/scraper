@@ -17,7 +17,7 @@ logger = logging.getLogger()
 SPREADSHEET_ID = '1UmYEGz8jibtvNUkq5X5HbG3lCdZTfQ4Blooq9bwDZwc'
 SHEET_NAME = 'Caster Links'
 ERROR_LOG_SHEET = 'Error Log'
-SERVICE_ACCOUNT_FILE = os.environ.get("GOOGLE_CREDS_JSON")
+SERVICE_ACCOUNT_FILE = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
 
 # --- Google Sheets Auth ---
 scopes = ['https://www.googleapis.com/auth/spreadsheets']
