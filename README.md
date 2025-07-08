@@ -18,19 +18,19 @@ in Google Sheets.
 
 ## Configuration
 
-Export the path to your Google service account credentials so the Google Sheets
-API can authenticate:
+The repository includes a service account file named `GOOGLE_APPLICATION_CREDENTIALS`.
+Export its path so the Google Sheets API can authenticate:
 
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
+export GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/GOOGLE_APPLICATION_CREDENTIALS
 ```
 
 ## Running the scraper
 
-Execute the scraper directly to update the sheet:
+Execute the scraper directly to update the sheet using the legacy script now named `scraper_new.py`:
 
 ```bash
-python3 scraper.py
+python3 scraper_new.py
 ```
 
 Alternatively, start the Flask API and trigger a run with a POST request:
